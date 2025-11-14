@@ -19,13 +19,13 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20 pb-36 text-center text-zinc-50 sm:py-24 sm:pb-24 md:px-12 lg:px-20"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-24 text-center text-zinc-50 md:px-12 lg:px-20"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_#111827_0,_#020617_65%)] opacity-70" />
-      <div className="pointer-events-none absolute inset-0 bg-[url('/hero-texture.webp')] bg-cover bg-center opacity-20 mix-blend-soft-light" />
+      <div className="pointer-events-none absolute inset-0 bg-about-radial" />
+      <div className="pointer-events-none absolute inset-0 bg-hero-texture mix-blend-soft-light" />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center gap-10 pb-12 sm:pb-0">
-        <p className="text-xs uppercase tracking-[0.35em] text-zinc-500">
+      <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center gap-10">
+        <p className="text-xs uppercase tracking-wider-custom text-zinc-500">
           About
         </p>
         <div className="space-y-8 text-balance">
@@ -43,7 +43,7 @@ export default function AboutSection() {
             onMouseLeave={() =>
               setCursor((prev) => ({ ...prev, active: false }))
             }
-            className="max-w-3xl text-pretty text-base leading-relaxed text-zinc-400 md:text-lg"
+            className="mx-auto max-w-3xl text-pretty text-base leading-relaxed text-zinc-400 md:text-lg"
           >
             Every interaction on this page has a purpose. Typography, spacing,
             and motion are tuned to keep the experience quiet, confident, and
@@ -55,8 +55,8 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-[-20%] bottom-10 flex overflow-hidden opacity-10 sm:bottom-24 sm:opacity-20">
-        <div className="animate-marquee whitespace-nowrap text-2xl font-semibold uppercase tracking-[0.5em] text-white/30 sm:text-4xl">
+      <div className="pointer-events-none absolute inset-x-[-20%] bottom-12 flex overflow-hidden opacity-10 sm:bottom-20 sm:opacity-20">
+        <div className="animate-marquee whitespace-nowrap text-2xl font-semibold uppercase tracking-widest-custom text-white/30 sm:text-4xl">
           {tickerWords.repeat(6)}
         </div>
       </div>

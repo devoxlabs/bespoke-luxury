@@ -168,3 +168,18 @@ body {
   transform: skew(-13deg) translateX(110%);
   transition-duration: 1s;
 }
+
+/* Background helper for about section's radial gradient (replaces Tailwind arbitrary bg class) */
+.bg-about-radial {
+  background: radial-gradient(circle at top, #111827 0, #020617 65%);
+  opacity: 0.7;
+}
+
+/* Tracking helper for about section labels and ticker */
+.tracking-wider-custom {
+  letter-spacing: 0.35em;
+}
+
+.tracking-widest-custom {
+  letter-spacing: 0.5em;
+}

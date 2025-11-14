@@ -72,7 +72,7 @@ export default function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
   <div className="pointer-events-none absolute inset-0 bg-hero-radial" />
-      <div className="absolute inset-0 bg-[url('/hero-texture.webp')] bg-cover bg-center opacity-35 mix-blend-soft-light" />
+      <div className="absolute inset-0 bg-hero-texture mix-blend-soft-light" />
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 py-36 text-center">
         <div className="w-full">
@@ -155,7 +155,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.98 }}
               >
                 <span className="relative z-10">Start a project</span>
-                <div className="pointer-events-none absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-110%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(110%)]">
+                <div className="pointer-events-none absolute inset-0 flex h-full w-full justify-center skew-translate-hero">
                   <div className="relative h-full w-10 bg-white/20" />
                 </div>
               </motion.a>
